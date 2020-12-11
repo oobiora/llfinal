@@ -1,0 +1,78 @@
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+.hidden {
+    display: none;
+}
+
+/* Play button */
+.video-js .vjs-big-play-button {
+  top: 48% !important;
+  left: 48% !important;
+}
+
+/* Responsiveness */
+#video {
+  max-width: 100%;
+  height: auto;
+}
+ .video-js {
+  width: 80vw !important;
+  height: 100vh !important;
+  float: left;
+}
+
+.vjs-playlist {
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+.vjs-playlist .vjs-playlist-item-list {
+  height: 500px
+}
+
+/* For mobile responsiveness */
+@media only screen and (max-width: 769px) {
+  .data-vjs-player {
+    min-height: 100vh;
+    min-width: fit-content;
+  }
+  .video-js{
+    width: 100vw !important;
+  }
+  .data-vjs-player ol {
+      min-width: 100%;
+  }
+}
+
+/* Overlays */
+.band-overlay {
+  background-color: rgba(36,36,36,0.6) !important;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left !important;
+  font-size: 12px !important;
+  line-height: 1.5;
+}
+.results-logo-overlay img {
+  height: 60px !important;
+  width: 90px !important;
+}
+@media only screen and (min-width: 767px) {
+  .band-overlay {
+    height: 90px;
+    font-size: 24px !important;
+  }
+  .results-logo-overlay img {
+    height: 90px !important;
+    width: 132px !important;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,197 @@
+.login-signup-background {
+    background-color: #97c266;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-card {
+    background-color: #fff;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 6px;
+    padding: 36px;
+    border: 3px solid #000;
+}
+@media only screen and (min-width: 769px) {
+    .login-signup-card {
+        width: 30vw;
+        height: 90vh;
+    }
+}
+
+.login-signup-card-title {
+    /* color: #FFA300; */
+    margin-bottom: 30px;    
+}
+
+/* .login-signup-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.signup-login-terms {
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.login-signup-card-input-el {
+    margin: 6px 0;
+    width: 90%;
+}
+
+/* Box Shadow Effect For Card */
+.box-shadow-effect {
+    position:relative;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-effect:before, .box-shadow-effect:after {
+content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.box-shadow-effect:after {
+right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+        -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+        -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/* Input Fields */
+.login-signup-group {
+    position: relative;
+    margin-bottom: 36px;
+}
+.login-signup-card-input-el {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+.login-signup-card-input-el:focus {
+    outline: none;
+}
+  
+  /* LABEL ======================================= */
+.login-signup-label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+  
+  /* active state */
+.login-signup-card-input-el:focus ~ .login-signup-label,
+.login-signup-card-input-el:valid ~ .login-signup-label {
+    top: -20px;
+    font-size: 14px;
+    color: #000;
+}
+  
+  /* BOTTOM BARS ================================= */
+  .login-signup-input-bar {
+    position: relative;
+    display: block;
+  }
+  .login-signup-input-bar:before,
+  .login-signup-input-bar:after {
+    content: "";
+    height: 3px;
+    width: 0;
+    bottom: 6px;
+    position: absolute;
+    background: #000;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .login-signup-input-bar:before {
+    left: 50%;
+  }
+  .login-signup-input-bar:after {
+    right: 50%;
+  }
+  
+  /* active state */
+  .login-signup-card-input-el:focus ~ .login-signup-input-bar:before,
+  .login-signup-card-input-el:focus ~ .login-signup-input-bar:after {
+    width: 50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .login-signup-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* active state */
+  .login-signup-card-input-el:focus ~ .login-signup-highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from {
+      background: #000;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @-moz-keyframes inputHighlighter {
+    from {
+      background: #000;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @keyframes inputHighlighter {
+    from {
+      background: #000;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  /* Modal */
+  .modal-body {
+    text-align: left;
+  }

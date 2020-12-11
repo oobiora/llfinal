@@ -1,0 +1,61 @@
+.admin-header-text {
+  text-align: center;
+}
+
+.display_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+
+}
+
+
+.admin-video-container {
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.admin-video-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.admin-video-element {
+  background-color: #CECECE;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 24px 0;
+}
+
+.admin-video-element:hover {
+  background-color: #97c266;
+}
+
+.admin-video-element:active {
+  background-color: #97c266;
+}
+
+.admin-tag-form {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1cb3d;
+  padding: 12px 0;
+
+}
+
+.margin-top-bottom-50 {
+  margin: 50px 0;
+}
+
+input[type=submit] {
+  position: absolute;
+  bottom: 12px;
+  margin: 0 auto;
+}
